@@ -1,0 +1,32 @@
+[
+  {
+    "region": "Africa",
+    "description": "The world's second-largest continent, home to 54 countries and an incredible diversity of cultures, languages, and landscapes.",
+    "fact": "Africa contains more countries than any other continent."
+  },
+  {
+    "region": "Americas",
+    "description": "Spanning from the Arctic to the tip of South America, the Americas cover the entire western hemisphere.",
+    "fact": "The Amazon rainforest in South America produces 20% of the world's oxygen."
+  },
+  {
+    "region": "Antarctic",
+    "description": "The southernmost continent, almost entirely covered by ice, with no permanent human population.",
+    "fact": "Antarctica holds about 70% of the world's fresh water in its ice sheets."
+  },
+  {
+    "region": "Asia",
+    "description": "The largest and most populous continent on Earth, stretching from the Middle East to the Pacific Ocean.",
+    "fact": "Asia is home to over 4.7 billion people, more than half the world's population."
+  },
+  {
+    "region": "Europe",
+    "description": "A peninsula of Eurasia, Europe is known for its rich history, diverse cultures, and political unity through the European Union.",
+    "fact": "Europe has the highest density of UNESCO World Heritage Sites of any continent."
+  },
+  {
+    "region": "Oceania",
+    "description": "A region of the Pacific Ocean encompassing Australia, Melanesia, Micronesia, and Polynesia.",
+    "fact": "Oceania contains over 10,000 islands spread across the Pacific Ocean."
+  }
+]

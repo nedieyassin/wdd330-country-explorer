@@ -8,3 +8,22 @@
     --color-text-primary: #111827;
     --color-text-secondary: #6B7280;
 }
+
+
+.country-card .card-front {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.country-card .card-back {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.country-card:hover .card-front {
+    opacity: 0;
+}
+
+.country-card:hover .card-back {
+    opacity: 1;
+}

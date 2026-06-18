@@ -1,4 +1,4 @@
-const countries_api_url = "https://countries.horizonlabsmw.com";
+const countries_api_url = "https://countries-data.fly.dev";
 const cities_api_url = "https://countriesnow.space/api/v0.1";
 
 export function formatPopulation(number) {
@@ -30,7 +30,7 @@ export async function getAllCountries() {
     const perPage = 200;
 
     while (true) {
-        const response = await fetch(`${countries_api_url}/api/collections/countries/records?fields=name_common,capital,flag_svg,flag_png,cca2,region,population&perPage=${perPage}&page=${page}&sort=name_common`);
+        const response = await fetch(`${countries_api_url}/api/collections/countries/records?fields=name_common,capital,flag_svg,flag_png,cca2,region,population,languages&perPage=${perPage}&page=${page}&sort=name_common`);
         if (!response.ok) throw new Error("Failed to load country list.");
         const data = await response.json();
 
@@ -41,7 +41,7 @@ export async function getAllCountries() {
     }
 
     return allCountries.map((c) => ({
-        name: c.name_common, flag: c.flag_svg || c.flag_png, cca2: c.cca2, region: c.region, capital: c.capital
+        name: c.name_common, flag: c.flag_svg || c.flag_png, cca2: c.cca2, region: c.region, capital: c.capital, population: c.population, languages: c.languages
     }));
 }
 
